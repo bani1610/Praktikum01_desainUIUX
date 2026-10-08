@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Black goese bistro | Pizza-on-Demand</h1>
+    <p>
+        our 12&quet; wood-fired pizzas are available for delivery.
+    </p>
+
+    <form action="http://www.blackgoosebistro.com/pizza.php" method="post" >
+        <fieldset>
+            <legend>your information</legend>
+            <p>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            
+            <p>
+                <label for="address">address: </label>
+                <input type="text" id="address" name="address" required>
+                inp
+            </p>
+            
+            <p>
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="intructions">delivery intructions:</label><br>
+                <textarea 
+                id="intructions"
+                name="intructions"
+                rows="4"
+                cols="50"
+                maxlength="400"
+                placeholder="no more than 400 characters."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>design your dream pizza</legend>
+            <p>pizza specs</p>
+            <p>pilih 1:</p>
+
+            <p>
+                <input type="radio" id="classic"name="crust" value="Classic white" required>
+                <label for="classic">Classic white</label><br>
+                
+                <input type="radio" id="multigrain" name="crust" value="multigrain" >
+                <label for="multigrain">multigrain</label><br>
+            
+                <input type="radio" id="Cheese" name="crust" value="Cheese" >
+                <label for="Cheese">Cheese</label><br>
+                
+                <input type="radio" id="gluten" name="crust" value="gluten">
+                <label for="gluten">gluten</label><br>
+            </p>
+
+            <p>toping</p>
+
+            <p> 
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" checked>
+                <label for="redsauce">Red sauce</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
+                <label for="redsauce">Red sauce</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
+                <label for="redsauce">Red sauce</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
+                <label for="redsauce">Red sauce</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" checked>
+                <label for="redsauce">Red sauce</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce">
+                <label for="redsauce">sosis</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
+                <label for="redsauce">Red sauce</label><br>
+                
+                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
+                <label for="redsauce">Red sauce</label><br>
+                
+            </p>
+
+            <p>
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+</body>
+</html>
