@@ -6,100 +6,95 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Black goese bistro | Pizza-on-Demand</h1>
+
+    <h1>form pemesanan pizza</h1>
     <p>
-        our 12&quet; wood-fired pizzas are available for delivery.
+       silakan isi form pemesanan ini dengan lengkap dan benar. 
     </p>
 
-    <form action="http://www.blackgoosebistro.com/pizza.php" method="post" >
+    <form action="hasil.html" method="get">
         <fieldset>
-            <legend>your information</legend>
+            <legend>Informasi Pemesan</legend>
             <p>
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required>
+                <label for="costomername">Nama:</label>
+                <input type="text" id="costomername" name="costomername" required>
             </p>
             
             <p>
-                <label for="address">address: </label>
+                <label for="address">address:</label>
                 <input type="text" id="address" name="address" required>
-                inp
             </p>
             
             <p>
-                <label for="phone">Phone: </label>
-                <input type="tel" id="phone" name="phone">
+                <label for="telephone">telephone:</label>
+                <input type="text" id="telephone" name="telephone" required>
             </p>
             
             <p>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </p>
-
+            
             <p>
-                <label for="intructions">delivery intructions:</label><br>
-                <textarea 
-                id="intructions"
-                name="intructions"
-                rows="4"
-                cols="50"
-                maxlength="400"
-                placeholder="no more than 400 characters."></textarea>
+                <label for="intruction">delivery instruction:</label><br>
+                <textarea
+                    id="intruction" 
+                    name="intruction" 
+                    rows="4" 
+                    cols="50"
+                    maxlength="400"
+                    placeholder="no more than 400 characters"></textarea>
             </p>
         </fieldset>
 
         <fieldset>
             <legend>design your dream pizza</legend>
-            <p>pizza specs</p>
-            <p>pilih 1:</p>
+            <p><strong>pizza specs</strong></p>
+            <p>pilih salah satu</p>
 
             <p>
-                <input type="radio" id="classic"name="crust" value="Classic white" required>
-                <label for="classic">Classic white</label><br>
+                <input type="radio" id="classic" name="crust" value="classic white" required>
+                <label for="classic">classic white</label><br>
                 
-                <input type="radio" id="multigrain" name="crust" value="multigrain" >
-                <label for="multigrain">multigrain</label><br>
+                <input type="radio" id="peperoni" name="crust" value="peperoni" required>
+                <label for="peperoni">peperoni</label><br>
+                
+                <input type="radio" id="ayam" name="crust" value="ayam" required>
+                <label for="ayam">ayam</label><br>
+                
+                <input type="radio" id="classic" name="crust" value="classic white" required>
+                <label for="classic">classic white</label>
+            </p>
+
+            <p><strong>topping</strong></p>
+
+            <p>
+                <input type="checkbox" id="classic" name="toppings" value="classic white" >
+                <label for="classic">red sauce</label><br>
+                
+                <input type="checkbox" id="peperoni" name="toppings" value="peperoni" >
+                <label for="peperoni">white sauce</label><br>
+                
+                <input type="checkbox" id="ayam" name="toppings" value="ayam" >
+                <label for="ayam">mozzarella chesse</label><br>
+                
+                <input type="checkbox" id="classic" name="toppings" value="classic white">
+                <label for="classic">pepperoni</label>
+            </p>
             
-                <input type="radio" id="Cheese" name="crust" value="Cheese" >
-                <label for="Cheese">Cheese</label><br>
-                
-                <input type="radio" id="gluten" name="crust" value="gluten">
-                <label for="gluten">gluten</label><br>
-            </p>
-
-            <p>toping</p>
-
-            <p> 
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" checked>
-                <label for="redsauce">Red sauce</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
-                <label for="redsauce">Red sauce</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
-                <label for="redsauce">Red sauce</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
-                <label for="redsauce">Red sauce</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" checked>
-                <label for="redsauce">Red sauce</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce">
-                <label for="redsauce">sosis</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
-                <label for="redsauce">Red sauce</label><br>
-                
-                <input type="checkbox" id="redsauce" name="toppings" value="Red sauce" >
-                <label for="redsauce">Red sauce</label><br>
-                
-            </p>
-
             <p>
-                <label for="quantity">Quantity: </label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10">
+                <label for="quantity">quantity:</label>
+                <select id="quantity" name="quantity" required>
+                    <option value="">--pilih jumlah--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </p>
         </fieldset>
+
         <p>
             <input type="submit" value="submit">
             <input type="reset" value="reset">
