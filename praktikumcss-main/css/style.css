@@ -1,0 +1,72 @@
+body {
+    background-color: #f5f5dd;
+}
+
+#header {
+    background-color:#deb887 ;
+    text-align: center;
+    padding: 5px 0;
+}
+
+h1 {
+    color: #0006fc;
+}
+blockquote {
+    background-color: #fed700;
+    border-left: 1px dotted black;
+    border-top: 1px dotted black;
+}
+.menu ul {
+ 
+    text-align: center;
+}
+.menu ul li {
+    list-style: none;
+    display: inline;
+}
+.gambar{
+    text-align: center;
+}
+.gambar img {
+    width: 200px;
+    height: 200px;
+}
+.biyuu {
+    font-size: 40px;
+    color: rgb(12, 12, 161);
+}
+
+.isi p{ 
+    line-height: 1;
+}
+
+.koleksi {
+    text-align: center;
+}
+
+.koleksi img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 20%;
+}
+.promo {
+    text-align: center;
+    justify-items: center;
+}
+.promo h2 {
+    color: red;
+ }
+ .promo ol {
+    list-style: none;
+    display: flex;
+ }
+
+.promo ol li {
+    margin: 0 10px;
+}
+.promo h3 {
+    width: fit-content;
+    border: 2px solid white;
+    background-color:rgb(13, 10, 31) ;
+    color: aliceblue;
+}
